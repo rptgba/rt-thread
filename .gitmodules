@@ -1,0 +1,3 @@
+[submodule "bsp/GDTwoAxisMotorControl"]
+	path = bsp/GDTwoAxisMotorControl
+	url = git@github.com:rptgba/GDTwoAxisMotorControl.git
