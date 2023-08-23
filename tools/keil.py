@@ -168,7 +168,8 @@ def MDK4AddGroup(ProjectFiles, parent, name, files, project_path, group_scons):
             obj_name = name.replace('.s', '.o')
         elif name.find('.S') != -1:
             obj_name = name.replace('.s', '.o')
-
+        elif name.find('.lib') != -1:
+            obj_name = name.replace('.lib', '.o')
         if ProjectFiles.count(obj_name):
             name = basename + '_' + name
         ProjectFiles.append(obj_name)
